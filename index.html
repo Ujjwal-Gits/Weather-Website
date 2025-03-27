@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <h1>Ujjwal Weather Forcast</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+            <button id="search-btn">Get Weather</button>
+            <ul id="suggestions" class="suggestions"></ul>
+        </div>
+        <div id="weather-result" class="weather-card">
+            <h2 id="city-name">City, Country</h2>
+            <div class="weather-details">
+                <div class="temp-container">
+                    <span id="temperature">0°C</span>
+                    <span id="description">Clear</span>
+                </div>
+                <div class="extra-info">
+                    <p>Humidity: <span id="humidity">0%</span></p>
+                    <p>Wind: <span id="wind">0 m/s</span></p>
+                    <p>Pressure: <span id="pressure">0 hPa</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="clouds">
+        <div class="cloud" data-speed="20"><img src="cloud1.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="25"><img src="cloud2.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="15"><img src="cloud3.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="30"><img src="cloud1.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="24"><img src="cloud5.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="21"><img src="cloud5.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="10"><img src="cloud4.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="17"><img src="cloud3.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="20"><img src="cloud1.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="28"><img src="cloud2.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="11"><img src="cloud3.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="33"><img src="cloud1.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="29"><img src="cloud5.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="11"><img src="cloud5.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="17"><img src="cloud4.png" alt="Cloud"></div>
+        <div class="cloud" data-speed="12"><img src="cloud3.png" alt="Cloud"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
